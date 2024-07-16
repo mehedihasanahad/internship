@@ -9,52 +9,52 @@
 // Global Scope
 
 // declare global variable
-var message = "Hello";
+var message = "Hello Global";
 
 function globalFn() {
-    console.log(`Local: ${message}`);
+    console.log(`Global Scope Local: ${message}`);
 }
 
 globalFn();
 
-console.log(`Global: ${message}`);
+console.log(`Global Scope Global: ${message}`);
 // ===============================================================================
 
 
 
 // Local (Function) Scope
-function localFn() {
+// function localFn() {
 
-    // local variable
-    var localMessage = "Hello";
+//     // local variable
+//     var localMessage = "Hello Local";
     
-    console.log(`Local: ${localMessage}`);
-}
+//     console.log(`Local Scope Local: ${localMessage}`);
+// }
 
-localFn();
+// localFn();
 
-// try to access message variable
-// outside the localFn() function
-console.log(`Global: ${localMessage}`);
+// // try to access message variable
+// // outside the localFn() function
+// console.log(`Local Scope Global: ${localMessage}`);
 // ===============================================================================
 
 
 
 
 // Block-Level Scope
-function display_scopes() {
-    // declare variable in local scope
-    let message = "local";
+// function display_scopes() {
+//     // declare variable in local scope
+//     let blockMessage = "local";
 
-    if (true) {
+//     if (true) {
 
-        // declare block-level variable
-        let message = "block-level";
+//         // declare block-level variable
+//         let blockMessage = "block-level";
 
-        console.log(`inner scope: ${message}`);
-    }
+//         console.log(`Block Scope inner if: ${blockMessage}`);
+//     }
 
-    console.log(`outer scope: ${message}`);
-}
+//     console.log(`Block Scope outer: ${blockMessage}`);
+// }
 
-display_scopes();
+// display_scopes();
