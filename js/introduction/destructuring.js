@@ -55,7 +55,7 @@ console.log(gender); // female
 
 // // destructuring assignment
 // // using different variable names
-// let { name: name1, age: age1, gender:gender1 } = person;
+// let { name: name1, age: age1, gender: gender1 } = person;
 
 // console.log(name1); // Sara
 // console.log(age1); // 25
@@ -112,8 +112,6 @@ console.log(gender); // female
 // Assign Remaining Elements to a Single Variable
 // const arrValue = ['one', 'two', 'three', 'four'];
 
-// // destructuring assignment in arrays
-// // assigning remaining elements to y
 // const [x, ...y] = arrValue;
 
 // console.log(x); // one
@@ -128,8 +126,6 @@ console.log(gender); // female
 //     gender: 'female'    
 // }
 
-// // destructuring assignment
-// // assigning remaining properties to rest
 // let { name, ...rest } = person;
 
 // console.log(name); // Sara
@@ -143,7 +139,6 @@ console.log(gender); // female
 // ====================================================================
 
 // Nested Destructuring Assignment
-// nested array elements
 // const arrValue = ['one', ['two', 'three']];
 
 // // nested destructuring assignment in arrays

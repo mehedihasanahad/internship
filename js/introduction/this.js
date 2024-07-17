@@ -1,10 +1,10 @@
 // 1. this Inside Global Scope
 
-let a = this;
-console.log(a);  // Window {}
+// let a = this;
+// console.log(a);  // Window {}
 
-this.name = 'Sarah';
-console.log(window.name); // Sarah
+// this.name = 'Sarah';
+// console.log(window.name); // Sarah
 
 
 
@@ -99,6 +99,7 @@ console.log(window.name); // Sarah
 
 // const greetObj = {
 //     name: 'Jack',
+//     context: this,
 
 //     // method
 //     sayHi: () => {
@@ -106,6 +107,7 @@ console.log(window.name); // Sarah
 //     }
 // }
 
+// console.log(greetObj.context);
 // greetObj.sayHi(); // window
 
 
@@ -114,11 +116,14 @@ console.log(window.name); // Sarah
 // this Inside Function with Strict Mode
 // 'use strict';
 // this.name = 'Jack';
+
 // function greet() {
 
 //     // this refers to undefined
 //     console.log(this);
 // }
+
+// console.log(this);
 // greet(); // undefined
 
 

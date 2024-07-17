@@ -5,19 +5,19 @@
 // nested function example
 
 // outer function
-// function greet(name) {
+function greet(name) {
 
-//     // inner function
-//     function displayName() {
-//         console.log('Hi' + ' ' + name);
-//     }
+    // inner function
+    function displayName() {
+        console.log('Hi' + ' ' + name);
+    }
 
-//     // calling inner function
-//     displayName();
-// }
+    // calling inner function
+    displayName();
+}
 
-// // calling outer function
-// greet('John'); // Hi John
+// calling outer function
+greet('John'); // Hi John
 
 
 // ==================================================================
@@ -52,19 +52,21 @@
 // function greet() {
 
 //     // variable defined outside the inner function
-//     let name = 'John';
+//     let count = 0;
 
 //     // inner function
 //     function displayName() {
 
 //         // accessing name variable
-//         return 'Hi' + ' ' + name;
+//         return 'Number is' + ' ' + ++count;
       
 //     }
 
 //     return displayName;
 // }
 
-// const g1 = greet();
-// console.log(g1); // returns the function definition
-// console.log(g1()); // returns the value
+// const displayNameFn = greet();
+
+// console.log(displayNameFn()); // returns the value
+// console.log(displayNameFn()); // returns the value
+// console.log(displayNameFn()); // returns the value
